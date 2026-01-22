@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Soccer Scouting Academy Reality Show Admin Portal - Yellow, Black & White Design System */
+
+@layer base {
+  :root {
+    /* Yellow, Black & White Soccer Academy Theme */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+
+    /* Primary: Black */
+    --primary: 0 0% 0%;
+    --primary-foreground: 43 76% 96%;
+
+    /* Secondary: Light Gray/White */
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 0%;
+
+    /* Muted: Soft Gray */
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Accent: Yellow/Gold */
+    --accent: 43 76% 52%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 43 76% 52%;
+
+    --radius: 0.5rem;
+
+    /* Success, Warning, Info colors */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    /* Sidebar: Black theme */
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 43 76% 52%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 20%;
+    --sidebar-accent-foreground: 43 76% 96%;
+    --sidebar-border: 0 0% 25%;
+    --sidebar-ring: 43 76% 52%;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 13%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 13%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 43 76% 52%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 43 76% 52%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 22%;
+    --input: 0 0% 22%;
+    --ring: 43 76% 52%;
+
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 43 76% 52%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 43 76% 96%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 43 76% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .gradient-black {
+    background: linear-gradient(135deg, hsl(0 0% 0%) 0%, hsl(0 0% 15%) 100%);
+  }
+  
+  .gradient-yellow {
+    background: linear-gradient(135deg, hsl(43 76% 52%) 0%, hsl(38 80% 45%) 100%);
+  }
+
+  .text-gradient-yellow {
+    background: linear-gradient(135deg, hsl(43 76% 52%) 0%, hsl(38 80% 45%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
